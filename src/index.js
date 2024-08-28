@@ -20,7 +20,7 @@ function Header() {
     fontSize: "50px",
     textTransform: "uppercase",
   };
-  return <h1 style={style}>Warteg Mang Udin</h1>;
+  return <h1 style={style}>Warteg Um Jayy</h1>;
 }
 
 function Menu() {
@@ -34,7 +34,7 @@ function Menu() {
       {numFoods > 0 ? (
         <>
           <p>
-            Aneka makanan Indonesia yang disajikan oleh warteg mang udin sebagai
+            Aneka makanan Indonesia yang disajikan oleh Warteg Um Jayy sebagai
             pemenuhan makanan kesehatan yang diperlukan dalam kehidupan
             sehari-hari.
           </p>
@@ -53,7 +53,7 @@ function Menu() {
 
 function Footer() {
   const hour = new Date().getHours();
-  const jamBuka = 20;
+  const jamBuka = 8;
   const jamTutup = 22;
   const isOpen = hour >= jamBuka && hour <= jamTutup;
 
@@ -69,7 +69,7 @@ function FooterOpenHour({ jamBuka, jamTutup }) {
     <footer className="footer">
       <div className="order">
         <p>
-          {new Date().getFullYear()} Warung Mang Udin | jam buka {jamBuka} - jam
+          {new Date().getFullYear()} Warung Um Jayy | jam buka {jamBuka} - jam
           tutup {jamTutup}
         </p>
         <button className="btn">Order</button>
